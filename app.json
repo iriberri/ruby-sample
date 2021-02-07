@@ -7,7 +7,7 @@
   "environments": {
     "test": {
       "addons": ["heroku-postgresql:in-dyno", "heroku-redis:in-dyno"],
-      "test-setup": "gem install rubocop",
+      "test-setup": "echo $HEROKU_PR_NUMBER",
       "test": "bundle exec rspec",
       "env": {
         "LANG": { "description": "A secret key for verifying the integrity of signed cookies."},
