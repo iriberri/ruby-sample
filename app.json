@@ -10,7 +10,10 @@
         "heroku-postgresql:hobby-dev",
         "cloudinary:starter",
         "algoliasearch:free"
-      ]
+      ],
+      "env": {
+        "ALGOLIASEARCH_APPLICATION_ID": "foo"
+      }
     }
   },
   "buildpacks": [
