@@ -4,6 +4,8 @@ This is a barebones Ruby app using the [Sinatra](http://www.sinatrarb.com) frame
 
 ## Running Locally
 
+
+
 Make sure you have [Ruby](https://www.ruby-lang.org), [Bundler](http://bundler.io) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
 ```sh
