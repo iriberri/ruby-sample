@@ -1,4 +1,4 @@
-:key:confluent:http://packages.confluent.io/deb/4.0/archive.key
-:repo:deb [arch=amd64] https://packages.confluent.io/deb/4.0 stable main
-confluent-kafka-2.11
+:key:confluent:http://packages.confluent.io/deb/7.0/archive.key
+:repo:deb [arch=amd64] https://packages.confluent.io/deb/7.0 stable main
+confluent-kafka-2.13
 confluent-schema-registry
