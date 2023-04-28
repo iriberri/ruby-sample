@@ -6,7 +6,6 @@
   "keywords": ["ruby", "sinatra"],
   "environments": {
     "test": {
-      "env": { "REDIS_VERSION": "7" },
       "addons": ["heroku-postgresql:in-dyno", "heroku-redis:in-dyno"],
       "scripts": {
       "test-setup": "echo $REDIS_URL;",
