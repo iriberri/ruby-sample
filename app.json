@@ -6,9 +6,10 @@
   "keywords": ["ruby", "sinatra"],
   "environments": {
     "test": {
+      "env": { "REDIS_VERSION": "7.0" }
       "addons": ["heroku-postgresql:in-dyno", "heroku-redis:in-dyno"],
       "scripts": {
-      "test-setup": "psql $DATABASE_URL -c 'CREATE EXTENSION IF NOT EXISTS btree_gist WITH SCHEMA public;'; psql $DATABASE_URL -c \"COMMENT ON EXTENSION btree_gist IS 'PL/pgSQL procedural language';\" ",
+      "test-setup": "echo $REDIS_URL;",
       "test": "ECHO"
       }
     }
