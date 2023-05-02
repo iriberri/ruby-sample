@@ -8,7 +8,7 @@
     "test": {
       "addons": ["heroku-postgresql:in-dyno", "heroku-redis:in-dyno"],
       "scripts": {
-      "test-setup": "echo $REDIS_URL;",
+      "test-setup": "echo $REDIS_URL; ",
       "test": "ECHO"
       }
     }
