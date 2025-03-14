@@ -5,14 +5,7 @@
   "logo": "https://www.ruby-lang.org/images/header-ruby-logo.png",
   "keywords": ["ruby", "sinatra"],
   "environments": {
-    "test": {
-            "env": { "REDIS_VERSION": "7.0" },
-      "addons": ["heroku-postgresql:in-dyno", "heroku-redis:in-dyno"],
-      "scripts": {
-      "test-setup": "echo $REDIS_URL; ",
-      "test": "ECHO"
-      }
-    }
+
   }
 }
 
