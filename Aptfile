@@ -1,2 +1,1 @@
-:repo:deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main
 postgresql-client-15
