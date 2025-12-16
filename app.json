@@ -4,6 +4,14 @@
   "repository": "https://github.com/heroku/ruby-sample",
   "logo": "https://www.ruby-lang.org/images/header-ruby-logo.png",
   "keywords": ["ruby", "sinatra"],
+  "buildpacks": [
+    {
+      "url": "heroku-community/apt"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ],
   "environments": {
     "test": {
       "env": { "REDIS_VERSION": "7" },
@@ -13,5 +21,6 @@
       "test": "psql $DATABASE_URL -c \"select * from pg_available_extensions();\""
       }
   }
+}
 }
 
