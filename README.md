@@ -9,7 +9,7 @@ Make sure you have [Ruby](https://www.ruby-lang.org), [Bundler](http://bundler.i
 ```sh
 git clone git@github.com:heroku/ruby-sample.git # or clone your own fork
 cd ruby-sample
-bundle
+bundle 
 heroku local
 ```
 
