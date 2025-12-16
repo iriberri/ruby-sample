@@ -17,7 +17,7 @@
       "env": { "REDIS_VERSION": "7" },
       "addons": ["heroku-postgresql:in-dyno"],
       "scripts": {
-      "test-setup": "pwd; find ./../.. -name pgvector; echo $DATABASE_URL; psql $DATABASE_URL -c \"create extension pgvector;\"",
+      "test-setup": "pwd; find / -name pgvector; echo $DATABASE_URL; psql $DATABASE_URL -c \"create extension pgvector;\"",
       "test": "psql $DATABASE_URL -c \"select * from pg_available_extensions();\""
       }
   }
