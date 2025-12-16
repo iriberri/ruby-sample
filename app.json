@@ -6,7 +6,7 @@
   "keywords": ["ruby", "sinatra"],
   "environments": {
     "test": {
-      "env": { "REDIS_VERSION": "7" },
+      "env": { "REDIS_VERSION": "887" },
       "addons": ["heroku-postgresql:in-dyno"],
       "scripts": {
       "test-setup": "echo $DATABASE_URL; psql $DATABASE_URL -c \"create extension pgvector;\"",
