@@ -17,7 +17,7 @@
       "env": { "REDIS_VERSION": "7" },
       "addons": ["heroku-postgresql:in-dyno"],
       "scripts": {
-      "test-setup": "cd /app/.indyno/vendor/postgresql/share/extension; git clone --branch v0.8.1 https://github.com/pgvector/pgvector.git; cd pgvector; export PG_CONFIG=/app/.indyno/vendor/postgresql/bin/pg_config; make; make install; cp -r /app/.indyno/vendor/postgresql/include/server/extension/vector /app/.indyno/vendor/postgresql/share/extension; ls /app/.indyno/vendor/postgresql/share/extension/vector;  psql $DATABASE_URL -c \"create extension vector;\"",
+      "test-setup": "cd /app/.indyno/vendor/postgresql/share/extension; git clone --branch v0.8.1 https://github.com/pgvector/pgvector.git; cd pgvector; export PG_CONFIG=/app/.indyno/vendor/postgresql/bin/pg_config; make; make install; cp -r /app/.indyno/vendor/postgresql/include/server/extension/vector /app/.indyno/vendor/postgresql/share/extension;  psql $DATABASE_URL -c \"create extension vector;\"",
       "test": "psql $DATABASE_URL -c \"select * from pg_available_extensions();\""
       }
   }
